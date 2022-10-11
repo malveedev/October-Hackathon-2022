@@ -3,48 +3,32 @@
         "id": 1,
         "url": "https://october-hack-malvee.herokuapp.com/companies/1/",
         "links": [],
-        "name": "Agora",
-        "logo": "https://october-hack-malvee.herokuapp.com/images/agora-blue-logo-transparent-bkg.png",
+        "name": "Facebook",
+        "logo": "https://october-hack-malvee.herokuapp.com/images/facebook.png",
         "summery": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to"
     },
     {
         "id": 2,
         "url": "https://october-hack-malvee.herokuapp.com/companies/2/",
         "links": [],
-        "name": "Vercel",
-        "logo": "https://october-hack-malvee.herokuapp.com/images/vercel-icon-512x449-3422jidz.png",
+        "name": "Google",
+        "logo": "https://october-hack-malvee.herokuapp.com/images/google.jpg",
         "summery": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to"
     },
     {
         "id": 3,
         "url": "https://october-hack-malvee.herokuapp.com/companies/3/",
         "links": [],
-        "name": "Daily.Dev",
-        "logo": "https://october-hack-malvee.herokuapp.com/images/Daily.dev_logo.png",
+        "name": "Uber",
+        "logo": "https://october-hack-malvee.herokuapp.com/images/uber.jpg",
         "summery": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to"
     },
     {
         "id": 4,
-        "url": "https://october-hack-malvee.herokuapp.com/companies/1/",
-        "links": [],
-        "name": "Node.js",
-        "logo": "https://october-hack-malvee.herokuapp.com/images/agora-blue-logo-transparent-bkg.png",
-        "summery": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to"
-    },
-    {
-        "id": 5,
-        "url": "https://october-hack-malvee.herokuapp.com/companies/2/",
-        "links": [],
-        "name": "Facebook",
-        "logo": "https://october-hack-malvee.herokuapp.com/images/vercel-icon-512x449-3422jidz.png",
-        "summery": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to"
-    },
-    {
-        "id": 6,
         "url": "https://october-hack-malvee.herokuapp.com/companies/3/",
         "links": [],
-        "name": "GOOGLE",
-        "logo": "https://october-hack-malvee.herokuapp.com/images/Daily.dev_logo.png",
+        "name": "Linked",
+        "logo": "https://october-hack-malvee.herokuapp.com/images/link.png",
         "summery": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to"
     }
 ]
