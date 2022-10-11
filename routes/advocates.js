@@ -19,6 +19,27 @@ Router.get("/", function(req,res){
         let limit = parseInt(req.query.limit) || 2;
         let page = parseInt(req.query.page) || 1;
 
+        // if limit only
+        if(req.query.query === undefined && req.query.limit !== undefined && req.query.page === undefined){
+             let limit_applied_data = []
+            for(let i = 0;i < limit;i++){
+                limit_applied_data.push(advocates[i])
+            }
+            // query_found = limit_applied_data;
+            // console.log(limit_applied_data)
+    
+            let final_data = limit_applied_data.filter(n => n)
+        
+
+            return res.json({
+                results: final_data.length,
+                limit: limit,
+                total_pages: Math.round(advocates.length / 2 + 0.1),
+                page: page,
+                advocates:final_data,
+            })   
+        }
+
         // if no ? = data
         if(req.query.query === undefined && req.query.limit === undefined && req.query.page === undefined){
             res.json({
@@ -80,7 +101,7 @@ Router.get("/", function(req,res){
         
 
             res.json({
-                results: advocates.length,
+                results: final_data.length,
                 limit: limit,
                 total_pages: Math.round(advocates.length / 2 + 0.1),
                 page: page,
