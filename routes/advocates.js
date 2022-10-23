@@ -114,7 +114,7 @@ Router.get("/", function(req,res){
     }   
 })
 
-Router.get("/:id", function(req,res){
+Router.get("/user/:id", function(req,res){
     try{
         const id = req.params.id;
         let advocates = JSON.parse(fs.readFileSync(path.join(__dirname,'./data/advocates.json')));
@@ -138,6 +138,34 @@ Router.get("/:id", function(req,res){
         res.json({ERROR:"ERROR FOUND"})
     }
    
+})
+
+Router.get("/:username", (req,res)=>{
+    try{
+        const username = req.params.username;
+        let advocates = JSON.parse(fs.readFileSync(path.join(__dirname,'./data/advocates.json')));
+    
+        let advocates_found = {};
+    
+        advocates.map((advocate, index) =>{
+            if(advocate.username == username){
+                advocates_found = advocate
+            }
+        })
+    
+        if(_.isEmpty(advocates_found)){
+            return res.json("Not Found");
+        }
+    
+        res.json({
+            advocate: advocates_found
+        })
+    }catch(e){
+        res.json({ERROR:"ERROR FOUND"})
+    }
+   
+
+
 })
 
 module.exports = Router;
