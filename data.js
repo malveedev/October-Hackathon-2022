@@ -90,6 +90,7 @@ for(let i = 6; i < 99;i++){
         let person = {
             id:i,
             name,
+            profile_pic: "https://october-hack-malvee.herokuapp.com/images/"+ rint(1,5).toString() + ".jpg",
             username: name.replace(/\s+/g, '').toLowerCase() + i,
             url: `https://october-hack-malvee.herokuapp.com/advocates/user/${i}/`,
             company:cmp[rint(0, cmp.length -1)],
